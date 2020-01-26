@@ -163,7 +163,7 @@ while (<N>) {
     if($l =~ /^([0-9a-f]+) T (.*)/) {
         my ($name)=($2);
         #print "Define $name in $file\n";
-        $file =~ s/^libcurl_la-//;
+        $file =~ s/^libcurl_scca_la-//;
         $exist{$name} = $file;
     }
     elsif($l =~ /^                 U (.*)/) {

@@ -48,9 +48,9 @@ LIBS = $(BLANK_AT_MAKETIME)
 
 # Dependencies
 if USE_EXPLICIT_LIB_DEPS
-LDADD = $(LIBDIR)/libcurl.la @LIBCURL_LIBS@
+LDADD = $(LIBDIR)/libcurl-scca.la @LIBCURL_LIBS@
 else
-LDADD = $(LIBDIR)/libcurl.la
+LDADD = $(LIBDIR)/libcurl-scca.la
 endif
 
 # This might hold -Werror

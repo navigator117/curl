@@ -61,9 +61,9 @@ CFLAGS += @CURL_CFLAG_EXTRAS@
 LIBS = $(BLANK_AT_MAKETIME)
 
 if USE_EXPLICIT_LIB_DEPS
-curl_LDADD = $(top_builddir)/lib/libcurl.la @LIBMETALINK_LIBS@ @LIBCURL_LIBS@
+curl_LDADD = $(top_builddir)/lib/libcurl-scca.la @LIBMETALINK_LIBS@ @LIBCURL_LIBS@
 else
-curl_LDADD = $(top_builddir)/lib/libcurl.la @LIBMETALINK_LIBS@ @NSS_LIBS@ @SSL_LIBS@ @ZLIB_LIBS@ @CURL_NETWORK_AND_TIME_LIBS@
+curl_LDADD = $(top_builddir)/lib/libcurl-scca.la @LIBMETALINK_LIBS@ @NSS_LIBS@ @SSL_LIBS@ @ZLIB_LIBS@ @CURL_NETWORK_AND_TIME_LIBS@
 endif
 
 curl_LDFLAGS = @LIBMETALINK_LDFLAGS@
