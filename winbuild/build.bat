@@ -1,0 +1,1 @@
+nmake /f Makefile.vc mode=dll WITH_SSL=dll ENABLE_WINSSL=no MACHINE=x64 SSL_PATH=C:\OPENSSL
